@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>عيد سعيد 🎉</title>
+<style>
+body {
+    margin:0;
+    font-family: Arial;
+    text-align:center;
+    background: linear-gradient(45deg,#ff9a9e,#fad0c4);
+    color:white;
+    overflow:hidden;
+}
+
+h1 {
+    margin-top:20%;
+    font-size:50px;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-20px);}
+    100%{transform: translateY(0);}
+}
+
+button {
+    padding:15px 30px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>كل سنة وانت طيب ❤️<br>عيد سعيد 🎉</h1>
+
+<button onclick="changeColor()">غير الألوان</button>
+
+<script>
+function changeColor(){
+    document.body.style.background =
+    "linear-gradient(45deg,#a18cd1,#fbc2eb)";
+}
+</script>
+
+</body>
+</html>
