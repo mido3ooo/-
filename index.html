@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>بقولك اي</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    flex-direction:column;
+    overflow:hidden;
+}
+
+h1{
+    font-size:50px;
+}
+
+button{
+    margin-top:20px;
+    padding:15px 40px;
+    font-size:22px;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+#final{
+    position:absolute;
+    font-size:80px;
+    opacity:0;
+    transition:0.5s;
+}
+</style>
+</head>
+<body>
+
+<div id="content">
+    <h1>بقولك اي 🫵🏻</h1>
+    <button onclick="boom()">اي🤔</button>
+</div>
+
+<div id="final">طز 😜</div>
+
+<script>
+function boom(){
+    document.getElementById("content").style.display = "none";
+    let final = document.getElementById("final");
+    final.style.opacity = "1";
+}
+</script>
+
+</body>
+</html>
