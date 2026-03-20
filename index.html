@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
 <title>بقولك اي</title>
-
 <style>
 body{
     margin:0;
-    font-family:Arial, sans-serif;
+    font-family:Arial;
     background:black;
     color:white;
     display:flex;
@@ -16,8 +15,6 @@ body{
     height:100vh;
     flex-direction:column;
     overflow:hidden;
-    text-align:center;
-    transition:1s ease;
 }
 
 h1{
@@ -40,55 +37,26 @@ button:hover{
 
 #final{
     position:absolute;
-    font-size:38px;
+    font-size:80px;
     opacity:0;
-}
-
-.line{
-    opacity:0;
-    margin:15px 0;
-    transition:0.6s;
-}
-
-@keyframes pop {
-    0%{transform:scale(1);}
-    50%{transform:scale(1.1);}
-    100%{transform:scale(1);}
-}
-
-.celebrate{
-    background:linear-gradient(45deg,#ff512f,#dd2476,#ff9966);
-    animation: pop 0.6s ease;
+    transition:0.5s;
 }
 </style>
 </head>
-
 <body>
 
 <div id="content">
     <h1>بقولك اي 🫵🏻</h1>
-    <button onclick="boom()">اي 🤔</button>
+    <button onclick="boom()">اي🤔</button>
 </div>
 
-<div id="final">
-    <div class="line" id="l1">😉 خدتك عـ...</div>
-    <div class="line" id="l2">...احم</div>
-    <div class="line" id="l3">😂❤️ كل سنة وانت طيب يسطا</div>
-</div>
+<div id="final">طز 😜</div>
 
 <script>
 function boom(){
     document.getElementById("content").style.display = "none";
     let final = document.getElementById("final");
     final.style.opacity = "1";
-
-    setTimeout(()=>{document.getElementById("l1").style.opacity="1";},500);
-    setTimeout(()=>{document.getElementById("l2").style.opacity="1";},1500);
-    setTimeout(()=>{document.getElementById("l3").style.opacity="1";},2500);
-
-    setTimeout(()=>{
-        document.body.classList.add("celebrate");
-    },3000);
 }
 </script>
 
