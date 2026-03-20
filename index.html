@@ -2,7 +2,7 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>بقولك اي</title>
+<title>🙂 </title>
 <style>
 body{
     margin:0;
@@ -29,12 +29,48 @@ button{
     border-radius:40px;
     cursor:pointer;
     transition:0.3s;
+    background-color: #333;
+    color: white;
 }
 
 button:hover{
     transform:scale(1.1);
 }
 
+#final{
+    position:absolute;
+    font-size:80px;
+    opacity:0;
+    transition:opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+#final.show{
+    opacity:1;
+}
+</style>
+</head>
+<body>
+
+<div id="content">
+    <h1>بقولك اي 🫵🏻</h1>
+    <button onclick="boom()">اي🤔</button>
+</div>
+
+<div id="final">خدتك عـ...
+احم...
+كل سنة و انت طيب يسطا😂❤️</div>
+
+<script>
+function boom(){
+    document.getElementById("content").style.display = "none";
+    let final = document.getElementById("final");
+    final.classList.add("show");
+}
+</script>
+
+</body>
+</html>
 #final{
     position:absolute;
     font-size:80px;
